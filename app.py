@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 load_dotenv()  # Loads variables from .env
 app = Flask(__name__)
-app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev-secret-key")
+app.secret_key = os.environ.get("FLASK_SECRET_KEY")
 
 
 
