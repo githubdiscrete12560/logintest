@@ -1,3 +1,4 @@
 flask>=3.0.0
 supabase>=2.0.0
 python-dotenv>=1.0.0  # For local .env files
+gunicorn>=20.1.0  # Required for Railway's production server
