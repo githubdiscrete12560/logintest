@@ -1,0 +1,10 @@
+# .gitignore
+.env           # Ignores the .env file
+.env*          # Optional: Ignores all files starting with .env (e.g., .env.local)
+*.env          # Alternative syntax (same effect)
+# Python
+__pycache__/
+*.py[cod]
+
+.env/
+venv/
