@@ -14,8 +14,8 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev-secret-key")
 #app.secret_key = os.environ.get("FLASK_SECRET_KEY")  # Now pulls from .env
 
 # Supabase setup
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "your-supabase-url")
-SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "your-supabase-key")
+SUPABASE_URL = os.environ.get("SUPABASE_URL")
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 @app.route("/")
